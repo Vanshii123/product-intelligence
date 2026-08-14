@@ -5,3 +5,6 @@ __pycache__/
 artifacts/
 node_modules/
 dist/
+*.pyc
+frontend/node_modules/
+frontend/dist/

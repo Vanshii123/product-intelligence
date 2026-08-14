@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  backend:
+    build: ./catalogiq
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./catalogiq/.env
+    volumes:
+      - ./catalogiq/artifacts:/app/artifacts
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_URL: http://localhost:8000
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend

@@ -1,0 +1,5 @@
+cd catalogiq
+echo python-3.11.9 > runtime.txt
+git add runtime.txt
+git commit -m "Pin Python 3.11 for Render build compatibility"
+git push origin main

@@ -2,7 +2,6 @@
 catalogiq/.env
 venv/
 __pycache__/
-artifacts/
 node_modules/
 dist/
 *.pyc
